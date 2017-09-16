@@ -1,5 +1,7 @@
 "use strict";
 
 const doItAll = require('./data.js');
+const activateEvents = require('./events.js');
 
-doItAll();
+doItAll.initializer();
+activateEvents.filterEvent();
