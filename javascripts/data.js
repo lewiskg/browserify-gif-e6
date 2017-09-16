@@ -42,4 +42,9 @@ const initializer = () => {
 	loadGifs(whenGifsLoad, errorFunction);
 };
 
-module.exports = initializer;
+// allows gifArray to be gotten after it's full
+const getGifs = () => {
+	return gifArray;
+};
+
+module.exports = {initializer, getGifs};
